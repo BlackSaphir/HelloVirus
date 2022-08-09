@@ -19,6 +19,8 @@ void main()
 
 void StartUp()
 {
+	SetConsoleOutputCP(CP_UTF8);
+	setvbuf(stdout, nullptr, _IOFBF, 1000);
 	progressbar bar(100);
 	bar.set_done_char("█");
 
